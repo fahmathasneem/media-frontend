@@ -1,0 +1,112 @@
+React---- js library(front end development)
+-----------------------------------------
+
+Basic commands
+
+-to create project:npx create-react-app projectname
+-to run project: npm start
+-to install react material ui: npm install @mui/material @emotion/react @emotion/styled
+-to build a project: npm run build
+-to install react-bootstrap: npm install react-bootstrap bootstrap
+-to install react icons: npm i feather-icons-react
+to api call install axios library :npm i axios
+
+
+Basic concepts
+-------------
+
+-resusable components based approach
+-jsx:javascript and xml
+-fast
+
+front end difference
+
+concept                 angular                 react                   vue
+---------------------------------------------------------------------------------------
+1.developer             framework---google      library---meta/facebook     framework--opensource
+
+2.language              typescript              javascript                      javascript
+
+3.development           real dom                virtual dom                      virtual dom
+
+4.data sharing         two data binding           one way data binding          two way data binding
+
+react component base application
+
+components: create a js file having a name start with capital letter
+
+                 two type of components 
+
+                1.class based components (rcc):stateful components
+                2.function based components (rfce):stateless components
+
+                    react hook--- hook is predefiend function and name start with use key word
+
+                                     hook syntax 
+                             -------------------------
+                                use predefined-function()
+
+                                use state()-----(function based components state creation use hook)
+state creation syntax
+
+const[statename,statevalueupdationfunction]=useState()
+
+  state:state is used to store value(also state has an advantage to treansfer value) we can share state to child component
+
+props:props is used to share data between parent and child 
+
+conditional rendering 
+
+Axios features
+-----------------------------------------
+Make XMLHttpRequests from the browser
+Make http requests from node.js
+Supports the Promise API
+Intercept request and response
+Transform request and response data
+Cancel requests
+Automatic transforms for JSON data
+🆕 Automatic data object serialization to multipart(like two part poto upload eg:passport)/form-data and x-www-form-urlencoded body encodings
+Client side support for protecting against XSRF
+
+request configure
+
+These are the available config options for making requests. Only the url is required. Requests will default to GET if method is not specified.
+
+{
+  // `url` is the server URL that will be used for the request
+  url: '/user',
+
+  // `method` is the request method to be used when making the request
+  method: 'get', // default
+
+  / `baseURL` will be prepended to `url` unless `url` is absolute.
+  // It can be convenient to set `baseURL` for an instance of axios to pass relative URLs
+  // to methods of that instance.
+  baseURL: 'https://some-domain.com/api/',
+
+  // `headers` are custom headers to be sent
+  headers: {'X-Requested-With': 'XMLHttpRequest'},
+
+   // `data` is the data to be sent as the request body
+  // Only applicable for request methods 'PUT', 'POST', 'DELETE , and 'PATCH'
+
+  data: {
+    firstName: 'Fred'
+  },
+
+
+<<<<<<<<<<<<      spread operator(...(3 dot))         >>>>>>>>>>>>>>>
+
+
+
+
+                      app.js
+                      |
+                      |
+                      header      landing      home     footer
+                                                 |
+                                                 |
+                                                 |
+                                                 add     view   category
+                      
